@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages-starter-cli",
+    "next-starter-package",
+    "react-starter-package"
+  ]
+}
