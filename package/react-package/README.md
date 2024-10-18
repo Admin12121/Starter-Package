@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+## Next Starter Package
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+next-starter-package is a powerful starter kit for Next.js projects, designed to provide all the essential packages and components you need for a smooth project setup. It offers a well-structured, scalable, and optimized foundation that accelerates development and helps you follow best practices from the very beginning.
 
-Currently, two official plugins are available:
+This package is built on top of shadcn/ui and uses Tailwind CSS for styling, giving you the flexibility and performance necessary for modern web development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🚀 Quick Start: Pre-configured Next.js project structure with all necessary dependencies.
+- 🎨 Reusable UI Components: Includes fully customizable, reusable components.
+- ⚡ Optimized for Performance: Best practices and optimizations out-of-the-box.
+- 📂 Project Structure: Scalable project organization for larger applications.
+- 💡 Ready-to-Use Utilities: Useful hooks, utilities, and templates for faster development.
+- 🔄 Auto Setup: Automatically sets up folders and basic components during installation.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+
+Install my-project with npm
+
+```bash
+     npm i starter-package-cli
+```
+    
+### Usage
+
+```bash
+   create-my-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+   create-my-app --name test-next-app --template next
 ```
+
+This will create the necessary folder structure, install any additional dependencies, and generate starter components, making it easy to jump right into development.
+
+## Customization
+All components are designed to be easily customizable to suit the specific needs of your project. You can modify styles with Tailwind CSS, and extend components as required.
+
+### Technologies
+Next.js: The React framework for production.
+Tailwind CSS: A utility-first CSS framework.
+shadcn/ui: A UI component library that integrates seamlessly with Tailwind CSS.
+Contributing
+Feel free to open issues or contribute to the project. Contributions are always welcome!
+
+## License
+This project is licensed under the MIT License.

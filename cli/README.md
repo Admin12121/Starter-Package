@@ -20,9 +20,18 @@ This package is built on top of shadcn/ui and uses Tailwind CSS for styling, giv
 Install my-project with npm
 
 ```bash
-    npm install next-starter-package
+     npm i starter-package-cli
 ```
-    
+
+### Usage
+
+```bash
+   create-my-app
+```
+
+```bash
+   create-my-app --name test-next-app --template next
+```    
 
 This will create the necessary folder structure, install any additional dependencies, and generate starter components, making it easy to jump right into development.
 

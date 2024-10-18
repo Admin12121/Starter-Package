@@ -20,7 +20,17 @@ This package is built on top of shadcn/ui and uses Tailwind CSS for styling, giv
 Install my-project with npm
 
 ```bash
-    npm install next-starter-package
+     npm i starter-package-cli
+```
+
+### Usage
+
+```bash
+   create-my-app
+```
+
+```bash
+   create-my-app --name test-next-app --template next
 ```
     
 
