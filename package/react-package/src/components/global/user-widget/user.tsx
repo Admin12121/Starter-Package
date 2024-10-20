@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Logout, Settings , Dashboard} from "@/icons"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import { DropDown } from "../drop-down"
 // import { handleSignOut } from "@/actions/logoutaction"
 
@@ -29,10 +29,10 @@ export const UserAvatar = ({ image, groupid, userid }: UserWidgetProps) => {
         </Avatar>
       }
     >
-      <Link href={`/dashboard`} className="flex gap-x-2 px-2 py-1">
+      <Link to={`/dashboard`} className="flex gap-x-2 px-2 py-1">
         <Dashboard /> Dashboard
       </Link>
-      <Link href={`/group/${groupid}/settings`} className="flex gap-x-2 px-2 py-1">
+      <Link to={`/group/${groupid}/settings`} className="flex gap-x-2 px-2 py-1">
         <Settings /> Settings
       </Link>
       <Button

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import {nextui} from '@nextui-org/theme';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 export default {
   darkMode: ["class"],
@@ -80,6 +81,6 @@ theme: {
 		  },
 	}
 },
-plugins: [nextui(),require("tailwindcss-animate")],
+plugins: [nextui(),tailwindcssAnimate],
 }
 

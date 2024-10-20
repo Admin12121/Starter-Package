@@ -7,7 +7,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import Image from "next/image"
 
 type SimpleModalProps = {
   trigger: JSX.Element
@@ -34,9 +33,8 @@ export const SimpleModal = ({
           <DialogContent className="bg-themeBlack border-themeDarkGray">
             <div className="flex justify-center gap-3 ">
               <div className="w-12 h-12 relative">
-                <Image
+                <img
                   src={`https://ucarecdn.com/2c9bd4ab-1f00-41df-bad2-df668f65a232/`}
-                  fill
                   alt="Corinna"
                 />
               </div>
@@ -45,9 +43,8 @@ export const SimpleModal = ({
                 <ArrowRight size={20} />
               </div>
               <div className="w-12 h-12 relative">
-                <Image
+                <img
                   src={`https://ucarecdn.com/${logo}/`}
-                  fill
                   alt="Stripe"
                 />
               </div>
