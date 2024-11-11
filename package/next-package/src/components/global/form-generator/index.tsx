@@ -1,8 +1,8 @@
 import { Textarea } from "@/components/ui/textarea"
 import { ErrorMessage } from "@hookform/error-message"
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form"
-import { Input } from "../../ui/input"
-import { Label } from "../../ui/label"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 type FormGeneratorProps = {
   type?: "text" | "email" | "password" | "number"
